@@ -1,3 +1,8 @@
+html
+{
+  box-sizing: border-box; min-width: 0; min-height: 0;
+    font-size: 100%;
+}
 body {
   background-color: #02161e;
   margin: 0;
@@ -45,7 +50,8 @@ body {
   height: fit-content;
   background: none;
   color: white !important;
-  font-family: Roboto, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Roboto, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu,
+ Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-right: 1.5rem;
   font-size: 1rem;
   color: white;
@@ -183,3 +189,109 @@ body {
   }
 }
 /*# sourceMappingURL=main.css.map */
+
+
+/* Changes made by Priyansh */
+.get
+{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    font-family: "Bungee Inline", cursive;
+    justify-content: center;
+}
+.get h2,p
+{
+  color: black;
+}
+.get-involved
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    margin-top: 0;
+}
+.get-involved h2,p
+{
+  text-align: left;
+  color: black;
+}
+@media (max-width: 900px) 
+{
+    .right-half,.left-half 
+    {
+        width: 100%;
+    }
+  }
+.left-half
+{
+    /* background-color: green; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 500px;
+    margin: 30px;
+    margin-top: 0;
+    width: 35%;
+    text-align: center;
+    padding: 40px;
+    border-radius: 12px;
+    font-family: "Bungee Inline", cursive;
+}
+.right-half
+{
+    /* background-color:  blueviolet; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 500px;
+    margin: 30px;
+    margin-top: 0;
+    width: 35%;
+    text-align: center;
+    padding: 40px;
+    border-radius: 12px;
+    font-family: "Bungee Inline", cursive;
+}
+
+.register-btn 
+{
+  display: inline-flex;
+  justify-content: center;
+  max-width: 100%;
+  margin-top: 2%;
+  width: 30%;
+  height: 10%;
+  font-size: 1.3rem;
+  color: black;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  font-family: "Bungee Inline", cursive;
+  background: none;
+  border: 1px solid black;
+  /* min-width: 0; */
+  flex-basis: 0;
+}
+
+.register-btn > span 
+{
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.register-btn:hover 
+{
+  background: #bc54cc;
+  /* background-image: -webkit-linear-gradient(top, #bc54cc, #01060a);
+  background-image: -moz-linear-gradient(top, #bc54cc, #01060a);
+  background-image: -ms-linear-gradient(top, #bc54cc, #01060a);
+  background-image: -o-linear-gradient(top, #bc54cc, #01060a);
+  background-image: linear-gradient(to bottom, #bc54cc, #01060a);
+  text-decoration: none; */
+  background-color: white;
+  color: #3f0071;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
