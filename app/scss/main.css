@@ -72,6 +72,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 0 !important;
+  padding: 0 !important;
 }
 
 .about .text {
