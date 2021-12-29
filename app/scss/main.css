@@ -67,15 +67,37 @@ body {
           transform: scale(1.2);
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 !important;
+}
+
+.about .text {
+  padding: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+}
+
+.line-right {
+  margin: 0;
+  display: inline;
+  height: 60vh;
+}
+
 .container {
   -webkit-transition: ease-in-out;
   transition: ease-in-out;
   border-radius: 5%;
-  margin: 5%;
-  width: 90%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  padding: 1rem;
 }
 
 .container h1 {
@@ -148,23 +170,32 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
+  .get h2 {
+    font-size: 1.5rem;
+  }
   .left-half h1,
   .right-half h1 {
-    font-size: 3.5vw;
+    font-size: 2rem !important;
   }
   .left-half p,
   .right-half p {
-    font-size: 2vw;
+    font-size: 0.8rem !important;
+  }
+  .text {
+    font-size: 0.8rem !important;
+  }
+  .line-right {
+    height: 10vh;
   }
   .container .elem {
     width: 40%;
     padding-top: 3vh;
   }
   .container .elem .caption {
-    font-size: 0.5rem !important;
+    font-size: 0.8rem !important;
   }
   .container h1 {
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
   }
   .bg_img {
     height: 70vh;
