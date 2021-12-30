@@ -156,6 +156,55 @@ body {
           transform: scale(1.2);
 }
 
+.clock {
+  text-align: center;
+}
+
+.clock h1 {
+  padding: 2%;
+  font-size: 2rem !important;
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  font-weight: 900;
+}
+
+#clockdiv {
+  margin: 2vw;
+  font-family: "Bungee Inline", cursive;
+  font-size: 1.5rem;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 100;
+  text-align: center;
+  padding: 1rem;
+}
+
+#clockdiv > div {
+  margin: 2vw;
+  padding: 1vw;
+  border-radius: 5%;
+  background-color: #610094;
+  display: inline-block;
+}
+
+#clockdiv div > span {
+  padding: 0.3rem;
+  border-radius: 5%;
+  background-color: #3f0071;
+  display: inline-block;
+  width: 5vw;
+}
+
+.smalltext {
+  padding-top: 0.5rem;
+  font-size: 1rem;
+}
+
 @media only screen and (min-width: 1001px) and (max-width: 1300px) {
   .bg_img {
     margin-left: 1%;
@@ -171,6 +220,13 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
+  #clockdiv {
+    font-size: 0.8rem;
+  }
+  .smalltext {
+    padding-top: 0.5rem;
+    font-size: 0.5rem;
+  }
   .get h2 {
     font-size: 1.5rem;
   }
