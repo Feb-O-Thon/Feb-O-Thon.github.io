@@ -21,6 +21,14 @@ body {
      object-fit: cover;
 }
 
+.moon {
+  width: 10vw;
+  position: absolute;
+  z-index: 1;
+  left: 70vw;
+  top: 10vh;
+}
+
 .timeline {
   width: 100vw;
 }
@@ -91,6 +99,17 @@ body {
   height: 60vh;
 }
 
+.sponsors_text {
+  margin: 1rem;
+  padding: 1rem !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+}
+
 .container {
   -webkit-transition: ease-in-out;
   transition: ease-in-out;
@@ -141,12 +160,12 @@ body {
   width: fit-content;
   height: 10%;
   font-size: 1.3rem;
-  color: white;
+  color: #f2e49b;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   font-family: "Bungee Inline", cursive;
   background: none;
-  border: 1px solid white;
+  border: 1px solid #f2e49b;
 }
 
 .splash .cta .splash-cta:hover {
@@ -426,6 +445,7 @@ body {
 }
 
 .register-btn {
+  text-decoration: none;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -439,7 +459,7 @@ body {
   width: fit-content;
   height: 10%;
   font-size: 1.3rem;
-  color: black;
+  color: black !important;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   font-family: "Bungee Inline", cursive;
