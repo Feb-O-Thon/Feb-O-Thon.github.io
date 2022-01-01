@@ -1,16 +1,19 @@
 console.log("working!");
 navbar = document.getElementById("navbar-container");
 trigger = document.getElementById("scroll-trigger");
+banner = document.getElementsByClassName("banner");
 nav_links = document.getElementsByClassName("nav-item");
 console.log(navbar);
 document.addEventListener("scroll", () => {
   if (window.pageYOffset >= trigger.offsetTop) {
     console.log(1);
     navbar.style.backgroundColor = "rgb(2,22,30)";
+    [...banner][0].style.background = "rgb(2,22,30)";
   }
   if (window.pageYOffset <= trigger.offsetTop) {
     console.log(1);
     navbar.style.background = "None";
+    [...banner][0].style.background = "None";
   }
 });
 
