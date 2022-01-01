@@ -108,7 +108,7 @@ body {
 
   .cta {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     .splash-cta {
       margin-top: 2%;
       width: fit-content;
@@ -237,17 +237,17 @@ body {
     }
   }
   .logo {
-    height: 7vh;
+    height: 6.5vh;
   }
   .splash {
     left: 10vw;
-  }
-  .cta {
-    justify-content: space-around;
-  }
-  .splash-cta {
-    font-size: 2.4vw !important;
-    width: fit-content !important;
+    .cta {
+      justify-content: space-evenly;
+      .splash-cta {
+        font-size: 2.4vw !important;
+        width: fit-content !important;
+      }
+    }
   }
 }
 //AboutUs-styling

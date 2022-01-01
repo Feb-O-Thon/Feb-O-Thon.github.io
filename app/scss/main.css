@@ -147,9 +147,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .splash .cta .splash-cta {
@@ -292,16 +292,17 @@ body {
     font-size: 2vw;
   }
   .logo {
-    height: 7vh;
+    height: 6.5vh;
   }
   .splash {
     left: 10vw;
   }
-  .cta {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+  .splash .cta {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
-  .splash-cta {
+  .splash .cta .splash-cta {
     font-size: 2.4vw !important;
     width: -webkit-fit-content !important;
     width: -moz-fit-content !important;
