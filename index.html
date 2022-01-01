@@ -8,6 +8,7 @@
       content="width=
     , initial-scale=1.0"
     />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -219,19 +220,52 @@
           <button class="register-btn btn1"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdS_OKeiiMTs-NvjU8zh4Zff7v8_znogQ2c6qxjpRwUafeiIQ/viewform?usp=sf_link">Sponsor Us</a></button>
         </div>
     </div>
-    <div data-aos="fade-right" class="container text">
+    <div data-aos="fade-right" class="container">
           <div>
             <h1>Contact Us</h1>
           </div>
+          <div class="contact">
           <div >
-            <p > We would love to hear from you!</p>
+            <p class="text"> We would love to hear from you!</p>
+              <p class="text">Write to us at coordinators@febothon.tech</p> 
           </div>
-          <div>
-              <p>E-mail:-<br> president@febothon.tech <br>coordinators@febothon.tech</p> 
-          </div>
-    </div>
+    
+    <form onsubmit="return false" autocomplete="off" >
+      <div class="row input-container">
+        
+          <div class="styled-input">
+            <input type="text" id="name" required />
+            <label>Name</label> 
      
+        </div>
+    
+          <div class="styled-input">
+            <input  type="text" id="Email" required />
+            <label>Email</label> 
+          </div>
+  
+          <div class="styled-input" style="float:right;">
+            <input type="text" id="number"  required />
+            <label>Phone Number</label> 
+          </div>
+  
+          <div class="styled-input">
+            <textarea id="message" required></textarea>
+            <label>Message</label>
+          </div>
+       
+          <div class="submit-btn"><button type="submit" id="submit-button">Send Message</button></div>
+        </div>
+    
+      </form>
+    
+  </div>
+</div>
     </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      emailjs.init('user_Mp8sqaVV4YPm0iUowHsOP')
+    </script>
     <script src="./app/js/app.js"></script>
     <script>
       AOS.init();

@@ -2,16 +2,14 @@ console.log("working!");
 navbar = document.getElementById("navbar-container");
 trigger = document.getElementById("scroll-trigger");
 banner = document.getElementsByClassName("banner");
+submit_btn = document.getElementById("submit-button");
 nav_links = document.getElementsByClassName("nav-item");
-console.log(navbar);
 document.addEventListener("scroll", () => {
   if (window.pageYOffset >= trigger.offsetTop) {
-    console.log(1);
     navbar.style.backgroundColor = "rgb(2,22,30)";
     [...banner][0].style.background = "rgb(2,22,30)";
   }
   if (window.pageYOffset <= trigger.offsetTop) {
-    console.log(1);
     navbar.style.background = "None";
     [...banner][0].style.background = "None";
   }
@@ -71,3 +69,40 @@ initializeClock("clockdiv", deadline);
     element.scrollIntoView((options = { behavior: "smooth" }));
   });
 });
+function validateEmail(email) {
+  var re = /\S+@\S+\.\S+/;
+  console.log(re.test(email));
+  return true;
+}
+function sendEmail() {
+  Name = document.getElementById("name").value;
+  mail = document.getElementById("Email").value;
+  Phone = document.getElementById("number").value;
+  Message = document.getElementById("message").value;
+  console.log(Name, mail, Phone, Message);
+  if (validateEmail(Email) == true) {
+    var templateParams = {
+      from_name: Name,
+      from_mail: mail,
+      to_name: "Coordinator",
+      number: Phone,
+      message: Message,
+    };
+    emailjs.send("service_ghkjyww", "template_6jqhlzz", templateParams).then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+        alert("Message sent succesfully!!");
+      },
+      function (error) {
+        alert("Oops, that message didn't go through...");
+        console.log("FAILED...", error);
+      }
+    );
+    return true;
+  } else {
+    alert("Invalid Input");
+    console.log("invalid");
+    return false;
+  }
+}
+submit_btn.addEventListener("click", sendEmail);
