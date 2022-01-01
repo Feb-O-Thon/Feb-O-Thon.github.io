@@ -201,6 +201,9 @@ body {
       font-size: 0.8rem !important;
     }
   }
+  .sponsors_text {
+    font-size: 0.8rem !important;
+  }
   .text {
     font-size: 0.8rem !important;
   }
@@ -344,7 +347,11 @@ body {
 }
 
 .register-btn {
-  text-decoration: none;
+  a {
+    text-decoration: none !important;
+    color: black !important;
+  }
+
   display: inline-flex;
   justify-content: center;
   max-width: 100%;
@@ -352,7 +359,7 @@ body {
   width: fit-content;
   height: 10%;
   font-size: 1.3rem;
-  color: black !important;
+
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   font-family: "Bungee Inline", cursive;

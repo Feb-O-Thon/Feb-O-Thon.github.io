@@ -1,6 +1,7 @@
 console.log("working!");
 navbar = document.getElementById("navbar-container");
 trigger = document.getElementById("scroll-trigger");
+nav_links = document.getElementsByClassName("nav-item");
 console.log(navbar);
 document.addEventListener("scroll", () => {
   if (window.pageYOffset >= trigger.offsetTop) {
@@ -56,3 +57,14 @@ function initializeClock(id, endtime) {
 
 const deadline = new Date(Date.parse(new Date(2022, 2, 1)));
 initializeClock("clockdiv", deadline);
+
+//nav-items
+
+[...nav_links].forEach((nav_link) => {
+  nav_link.addEventListener("click", () => {
+    id = nav_link.getAttribute("name");
+    console.log(id);
+    element = document.getElementById(id);
+    element.scrollIntoView((options = { behavior: "smooth" }));
+  });
+});

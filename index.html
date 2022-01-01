@@ -18,17 +18,17 @@
     />
     <link rel="stylesheet" href="app/scss/main.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>Document</title>
+    <title>Febothon2022</title>
   </head>
   <body>
     <div class="nav" id="navbar-container">
-      <div class="nav-item"><p>Home</p></div>
-      <div class="nav-item"><p>About</p></div>
-      <div class="nav-item"><p>Get Involved</p></div>
-      <div class="nav-item"><p>Sponsor Us</p></div>
+      <div name="Home" class="nav-item"><p>Home</p></div>
+      <div name="About"class="nav-item"><p>About</p></div>
+      <div name="Colab"class="nav-item"><p>Get Involved</p></div>
+      <div name="Sponsor"class="nav-item"><p>Sponsor Us</p></div>
     </div>
     <div>
-      <div>
+      <div id="Home">
         <img class="bg_img" src="./images/hackathon-background+.png" />
       </div>
       <div>
@@ -66,12 +66,12 @@
         </div>
       </div>
     </div>
-    <div data-aos="fade-right" class="container about">
+    <div data-aos="fade-right" class="container about" id="About">
       <img
         src="images/icons/lines-1-finaljpg-removebg-preview.png"
         class="line-right"
       />
-      <div class="text">
+      <div  class="text">
         <h1>About Us</h1>
         <p>
           “Everybody has a creative potential and from the moment you can
@@ -135,7 +135,7 @@
         </div>
       </div>
     </div>
-    <div class="white_container">
+    <div class="white_container" id="Colab">
       <div class="get">
         <h2>Collaborate with Us!</h2>
       </div>
@@ -143,33 +143,41 @@
         <div class="left-half">
           <h2>Individual</h2>
           <p>
-            <p>Will be joining as a part of MLSA community</p>
-<p>1 PROJECT ONLY (4-5 MEMBER)</p>
+            <p>Individual Collaborators can join if they are a part of Microsoft Learn Student Ambassador Community</p>
+            <ul>
+              <li><p>1 Project only</p></li>
+              <li><p>Team Limit: 5 Members</p></li>
+            </ul>
           </p>
         </div>
         <div class="right-half">
           <h2>Community</h2>
-          <p>
-            <p>4 MENTORS FOR OPEN-SOURCE</p>
-            <p>MAXIMUM 7 PROJECTS
+          <p> Any Technical Community can collaborate with us as a whole and become joint hosts of the event. 
+            <p>Requirements</p>
+            <ul>
+              <li><p>4 Open Source Mentors to guide various projects during the open source event</p></li>
+              <li><p>Upto 7 Projects from the Technical Community</li>
+            </ul>
             </p>
           </p>
           <p>
             Your college doesn't have a technical community yet but still want
-            to collaborate ? We got you covered too...
+            to collaborate ? We got you covered too...you can collaborate as an institution, rules are same as technical community collaboration.
           </p>
         </div>
       </div>
       <button class="register-btn"><a href="https://forms.gle/Y1ukgySFB9kcRBnMA">Join Us</a></button>
     </div>
-    <div data-aos="fade-right" class="container sponsors_text">
+    <div data-aos="fade-right" class="container sponsors_text" id="Sponsor">
       <h1>Sponsors</h1>
       <p>Over discussion and planning, our team is dedicated at customizing sponsorship packages, designed according to the specific needs. 
-        We have two broad categories:</p>
-        <p>A)	Event Sponsors-</p>                                                              
-         Support us with Digital Swag, Exam Vouchers and Subscription keys.     
-         <p>B)	Open-Source Sponsors-</p>
-        Provide us with Exciting Goodies, Subscription Keys, Insightful Mentorship and Cash Prizes. 
+        We have two broad categories:
+        <ul>
+          <li> <p>Event Sponsors-</p>                                                              
+            Support us with Digital Swag, Exam Vouchers and Subscription keys.     </li>
+          <li> <p>Open-Source Sponsors-</p>
+            Provide us with Exciting Goodies, Subscription Keys, Insightful Mentorship and Cash Prizes. </li>
+        </ul> 
         </p>
     </div>
     <script src="./app/js/app.js"></script>
