@@ -5,6 +5,11 @@ body {
   font-size: 1rem;
 }
 
+html,
+body {
+  overflow: auto;
+}
+
 .bg_img {
   height: 100vh;
   width: 100vw !important;
@@ -33,13 +38,25 @@ body {
   width: 100vw;
 }
 
+.scroll-trigger {
+  height: 3vh;
+  background: none;
+  width: 100vw;
+  display: block;
+}
+
 .nav {
   position: fixed;
+  top: 0;
+  z-index: 10;
+  padding-top: 2vh;
   background: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 6vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
 }
 
@@ -70,6 +87,7 @@ body {
 
 .nav .nav-item:hover {
   border-bottom: 4px solid white;
+  border-bottom-style: inset;
   color: #3f0071;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -116,6 +134,7 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   padding: 1rem;
+  padding-top: 2vh;
   margin-left: 5vw;
 }
 
@@ -203,6 +222,7 @@ body {
 }
 
 #clockdiv > div {
+  width: 8vw;
   margin: 2vw;
   padding: 1vw;
   border-radius: 5%;
@@ -215,7 +235,9 @@ body {
   border-radius: 5%;
   background-color: #3f0071;
   display: inline-block;
-  width: 5vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .smalltext {
@@ -239,6 +261,12 @@ body {
 @media only screen and (max-width: 1000px) {
   #clockdiv {
     font-size: 0.8rem;
+  }
+  #clockdiv div {
+    width: 15vw;
+  }
+  #clockdiv div span {
+    width: 80%;
   }
   .smalltext {
     padding-top: 0.5rem;
@@ -278,10 +306,15 @@ body {
     height: 70vh;
   }
   .nav {
+    left: 0;
     margin: auto;
-    width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    width: 100vw;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .nav :first-child {
+    margin-left: 0;
   }
   .nav .nav-item {
     margin-right: 0;
