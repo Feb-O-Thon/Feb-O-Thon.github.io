@@ -186,6 +186,11 @@ body {
   border: 1px solid #f2e49b;
 }
 
+.splash .cta .splash-cta a {
+  text-decoration: none;
+  color: #f2e49b;
+}
+
 .splash .cta .splash-cta:hover {
   background-color: white;
   color: #3f0071;

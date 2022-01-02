@@ -125,6 +125,10 @@ body {
     display: flex;
     justify-content: space-evenly;
     .splash-cta {
+      a {
+        text-decoration: none;
+        color: $accent-color;
+      }
       margin-top: 2%;
       width: fit-content;
       height: 10%;
