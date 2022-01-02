@@ -191,6 +191,10 @@ body {
   color: #f2e49b;
 }
 
+.splash .cta .splash-cta a:hover {
+  color: #3f0071;
+}
+
 .splash .cta .splash-cta:hover {
   background-color: white;
   color: #3f0071;
