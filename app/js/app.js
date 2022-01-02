@@ -56,7 +56,7 @@ function initializeClock(id, endtime) {
   const timeinterval = setInterval(updateClock, 1000);
 }
 
-const deadline = new Date(Date.parse(new Date(2022, 2, 1)));
+const deadline = new Date(2022, 1, 1);
 initializeClock("clockdiv", deadline);
 
 //nav-items

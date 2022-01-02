@@ -5,6 +5,10 @@ body {
   overflow-x: hidden;
   font-size: 1rem;
 }
+html,
+body {
+  overflow: auto;
+}
 .bg_img {
   height: 100vh;
   width: 100vw !important;
@@ -27,14 +31,23 @@ body {
 .timeline {
   width: 100vw;
 }
+.scroll-trigger {
+  height: 3vh;
+  background: none;
+  width: 100vw;
+  display: block;
+}
 .nav {
   :first-child {
     margin-left: 1.5rem;
   }
   position: fixed;
+  top: 0;
+  z-index: 10;
+  padding-top: 2vh;
   background: none;
   display: flex;
-  height: 6vh;
+  height: fit-content;
   width: 100%;
   .nav-item {
     p {
@@ -53,6 +66,7 @@ body {
     background: none;
     &:hover {
       border-bottom: 4px solid white;
+      border-bottom-style: inset;
       color: $primary;
       transform: scale(1.2);
     }
@@ -92,6 +106,7 @@ body {
   border-radius: 5%;
   height: fit-content;
   padding: 1rem;
+  padding-top: 2vh;
   margin-left: 5vw;
 }
 .splash {
@@ -110,6 +125,13 @@ body {
     display: flex;
     justify-content: space-evenly;
     .splash-cta {
+      a {
+        text-decoration: none;
+        color: $accent-color;
+        &:hover {
+          color: $primary;
+        }
+      }
       margin-top: 2%;
       width: fit-content;
       height: 10%;
@@ -148,6 +170,7 @@ body {
 }
 
 #clockdiv > div {
+  width: 8vw;
   margin: 2vw;
   padding: 1vw;
   border-radius: 5%;
@@ -160,7 +183,7 @@ body {
   border-radius: 5%;
   background-color: $primary;
   display: inline-block;
-  width: 5vw;
+  width: 70%;
 }
 
 .smalltext {
@@ -182,6 +205,12 @@ body {
 @media only screen and (max-width: 1000px) {
   #clockdiv {
     font-size: 0.8rem;
+    div {
+      width: 15vw;
+      span {
+        width: 80%;
+      }
+    }
   }
   .smalltext {
     padding-top: 0.5rem;
@@ -226,9 +255,13 @@ body {
     height: 70vh;
   }
   .nav {
+    :first-child {
+      margin-left: 0;
+    }
+    left: 0;
     margin: auto;
-    width: 100%;
-    justify-content: space-around;
+    width: 100vw;
+    justify-content: space-evenly;
     .nav-item {
       margin-right: 0;
       padding: 0.2rem;
